@@ -1,0 +1,45 @@
+import turtle
+wn = turtle.Screen()
+pen = turtle.Turtle()
+print(100%6)
+bgColor = "black" #input("what background color would you like?: ")
+penColor = "green" #input("what pen color would you like?: ")
+penSize = .00001 #input("what pen size would you like?:" )
+
+wn.bgcolor(bgColor)
+pen.color(penColor)
+pen.pensize(int(penSize))
+
+pen.shape("blank")
+pen.speed(10)
+
+#pen.stamp()
+
+# for i in range(0,100, 3):
+#     pen.goto(i,5*i -20)
+#     pen.dot()
+for i in range(4):
+    pen.forward(50)
+    pen.left(90)
+#pen.left(90)
+pen.forward(50)
+pen.left(45)
+pen.forward(50)
+pen.left(180)
+pen.forward(50)
+pen.right(45+90)
+pen.forward(50)
+pen.right(45)
+pen.forward(50)
+pen.left(180)
+pen.forward(50)
+pen.right(45)
+pen.forward(50)
+pen.right(45+90)
+pen.forward(50)
+pen.right(45)
+pen.forward(50)
+pen.right(90)
+pen.forward(50)
+
+wn.exitonclick()
